@@ -1,0 +1,41 @@
+:root {
+    --background: #f4f4f4;
+    --background-off: #eaeaea;
+    --text: #161616;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #161616;
+        --background-off: #303030;
+        --text: #c8c7c9;
+    }
+}
+
+body {
+    background-color: var(--background);
+}
+
+#emote {
+    font-size: 15vw;
+    margin: 0 auto;
+}
+
+#wrapper {
+    margin-top: 25vh;
+    text-align: center;
+    font-family: monospace;
+    color: var(--text);
+}
+
+button {
+    cursor: pointer;
+    margin-top: 100px;
+    border: 1px solid var(--text);
+    background-color: var(--background-off);
+    color: var(--text);
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-family: monospace;
+}
